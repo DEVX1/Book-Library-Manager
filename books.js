@@ -26,7 +26,7 @@ function BookCtrl($scope) {
     'cabinets' : ['Novels', 'Comics']
   }, {
     'name' : 'Living Room',
-    'cabinets' : ['основная', 'Black Shelf']
+    'cabinets' : ['Black Shelf']
   }];
   $scope.room = $scope.rooms[0];	
   $scope.cabinet = $scope.room.cabinets[0];
