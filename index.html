@@ -15,14 +15,14 @@
         <h2>Библиотека</h2>
 	      <form ng-submit="addBook()">
 	      	<ul class="book-form-list">
-		        <li><input type="text" ng-model="title"  size="30" placeholder="название"></li>
-		        <li><input type="text" ng-model="author"  size="30" placeholder="автор"></li>
+		        <li><input type="text" ng-model="title"  size="30" placeholder="Title"></li>
+		        <li><input type="text" ng-model="author"  size="30" placeholder="Author"></li>
 		        <li><select ng-model="room" ng-change="roomChanged()" ng-options="r.name for r in rooms"></select></li>
 		        <li><select ng-model="cabinet" ng-options="c for c in room.cabinets"></select></li>
-		        <li><input type="text" ng-model="shelf"  size="30" placeholder="впишите полку"></li>
+		        <li><input type="text" ng-model="shelf"  size="30" placeholder="Enter the Shelf"></li>
 	        </ul>
-	        <input type="submit" class="btn-primary" value="добавить" />
-          <a href="" ng-click="updateBook()" class="btn" id="update-btn" ng-disabled="isUpdateDisabled()">изменить</a>
+	        <input type="submit" class="btn-primary" value="Add" />
+          <a href="" ng-click="updateBook()" class="btn" id="update-btn" ng-disabled="isUpdateDisabled()">Alter</a>
 	      </form>
       </div>
       <div id="rooms" class="panel panel-default">
