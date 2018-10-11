@@ -22,14 +22,11 @@ function BookCtrl($scope) {
   $scope.books = $scope.readFromStorage();
 
   $scope.rooms = [{
-    'name' : 'гостиная',
-    'cabinets' : ['большая телевизионная', 'крайняя правая', 
-      'малая телевизионная левая', 'малая телевизионная правая', 
-      'слева от холодильника','над холодильником', 'левая верхняя', 'левая нижняя',
-      'правая верхняя', 'средняя основная', 'барная', 'левая надпольная', 'правая надпольная', 'дисковая']
+    'name' : 'Lukas' Room',
+    'cabinets' : ['Novels', 'Comics']
   }, {
-    'name' : 'детская',
-    'cabinets' : ['основная', 'тумбочная', 'подстольная']
+    'name' : 'Living Room',
+    'cabinets' : ['основная', 'Black Shelf']
   }];
   $scope.room = $scope.rooms[0];	
   $scope.cabinet = $scope.room.cabinets[0];
